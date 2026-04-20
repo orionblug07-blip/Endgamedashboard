@@ -1,0 +1,13 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/weekly-report",
+      "schedule": "0 7 * * 1"
+    }
+  ],
+  "functions": {
+    "app/api/cron/**": {
+      "maxDuration": 300
+    }
+  }
+}
